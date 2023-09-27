@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Font Awesome for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Instagram Feed</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Instagram logo -->
+            <a class="navbar-brand" href="https://www.instagram.com/">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <!-- Buttons to the right -->
+            <div class="navbar-collapse justify-content-end">
+                <!--Modal-->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">Caption:</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                        placeholder="Add the caption of your post here">
+                                </div>
+                                <button class="modal-icons mx-1"><i class="fa-solid fa-camera"></i></button>
+                                <button class="modal-icons"><i class="fa-solid fa-location-dot"></i></button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Dropdown-->
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Grid view/List view icons -->
+        </div>
+    </nav>
+    <!-- New row for Grid view/List view icons -->
+    <div class="container mt-2">
+        <div class="row">
+            <nav class="navbar bg-body-tertiary">
+                <form class="container-fluid justify-content-center">
+                    <a href="index.html" class="icon-to-press">
+                        <i class="fa-solid fa-table-cells mx-4 text-secondary"></i> <!-- Grid Icon -->
+                    </a>
+                    <a href="#" class="icon-to-press">
+                        <i class="fa-solid fa-square text-primary"></i> <!-- Square icon pressed-->
+                    </a>
+                </form>
+            </nav>
+        </div>
+    </div>
+
+    <!-- New row for Posts Card Bootstrap -->
+    <div class="container navbar-expand-lg">
+        <!-- First post-->
+        <div class="row mb-3 mt-3 justify-content-center">
+            <div class="card" style="width: 40rem;">
+                <div class="row justify-content-between">
+                    <div class="col-10">
+                        <h5 class="card-title mt-2">Ocean eyes</h5>
+                    </div>
+                    <div class="col mt-1 justify-content-end">
+                        <p class="card-text"><small class="text-muted">08/26</small></p>
+                    </div>
+                </div>
+
+                <img src="https://picsum.photos/id/37/390/390" class="card-img-top" alt="Ocean view with plants">
+                <div class="card-body">
+                    <h6 class="card-subtitle">204 Likes</h6>
+                    <p class="card-text">Photo on Instagram of something I found somewhere</p>
+                </div>
+            </div>
+        </div>
+        <!-- Second post-->
+        <div class="row mb-3 justify-content-center">
+            <div class="card" style="width: 40rem;">
+                <div class="row justify-content-between">
+                    <div class="col-10">
+                        <h5 class="card-title mt-2">Look up!</h5>
+                    </div>
+                    <div class="col mt-1 justify-content-end">
+                        <p class="card-text"><small class="text-muted">04/09</small></p>
+                    </div>
+                </div>
+
+                <img src="https://picsum.photos/id/38/390/390" class="card-img-top"
+                    alt="Sky with a cloud and airplane line">
+                <div class="card-body">
+                    <h6 class="card-subtitle">125 Likes</h6>
+                    <p class="card-text">Photo on Instagram of something I found somewhere</p>
+                </div>
+            </div>
+        </div>
+        <!-- Third post-->
+        <div class="row mb-3 justify-content-center">
+            <div class="card" style="width: 40rem;">
+                <div class="row justify-content-between">
+                    <div class="col-10">
+                        <h5 class="card-title mt-2">Catito</h5>
+                    </div>
+                    <div class="col mt-1 justify-content-end">
+                        <p class="card-text"><small class="text-muted">06/50</small></p>
+                    </div>
+                </div>
+
+                <img src="https://picsum.photos/id/40/390/390" class="card-img-top" alt="Cute close-up to a cat nose">
+                <div class="card-body">
+                    <h6 class="card-subtitle">Liked by Blackpink and 156,651 others</h6>
+                    <p class="card-text">Photo on Instagram of something I found somewhere</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fourth post-->
+        <div class="row mb-3 justify-content-center">
+            <div class="card" style="width: 40rem;">
+                <div class="row justify-content-between">
+                    <div class="col-10">
+                        <h5 class="card-title mt-2">Inedible cotton candy</h5>
+                    </div>
+                    <div class="col mt-1 justify-content-end">
+                        <p class="card-text"><small class="text-muted">01/02</small></p>
+                    </div>
+                </div>
+
+                <img src="https://picsum.photos/id/53/390/390" class="card-img-top" alt="Cloud">
+                <div class="card-body">
+                    <h6 class="card-subtitle">6 Likes</h6>
+                    <p class="card-text">Photo on Instagram of something I found somewhere</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fifthth post-->
+        <div class="row mb-3 justify-content-center">
+            <div class="card" style="width: 40rem;">
+                <div class="row justify-content-between">
+                    <div class="col-10">
+                        <h5 class="card-title mt-2">Road trip :]</h5>
+                    </div>
+                    <div class="col mt-1 justify-content-end">
+                        <p class="card-text"><small class="text-muted">06/61</small></p>
+                    </div>
+                </div>
+
+                <img src="https://picsum.photos/id/70/390/390" class="card-img-top" alt="Road surrounded by trees">
+                <div class="card-body">
+                    <h6 class="card-subtitle">1 Like</h6>
+                    <p class="card-text">Photo on Instagram of something I found somewhere</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sixth post-->
+        <div class="row mb-3 justify-content-center">
+            <div class="card" style="width: 40rem;">
+                <div class="row justify-content-between">
+                    <div class="col-10">
+                        <h5 class="card-title mt-2">I stole these 8]</h5>
+                    </div>
+                    <div class="col mt-1 justify-content-end">
+                        <p class="card-text"><small class="text-muted">01/01</small></p>
+                    </div>
+                </div>
+
+                <img src="https://picsum.photos/id/80/390/390" class="card-img-top" alt="Decorations">
+                <div class="card-body">
+                    <h6 class="card-subtitle">1651 Likes</h6>
+                    <p class="card-text">Photo on Instagram of something I found somewhere</p>
+                </div>
+            </div>
+        </div>
+        <!-- Seventh post-->
+        <div class="row mb-3 justify-content-center">
+            <div class="card" style="width: 40rem;">
+                <div class="row justify-content-between">
+                    <div class="col-10">
+                        <h5 class="card-title mt-2">Spring is here! A bailar cueca</h5>
+                    </div>
+                    <div class="col mt-1 justify-content-end">
+                        <p class="card-text"><small class="text-muted">06/15</small></p>
+                    </div>
+                </div>
+
+                <img src="https://picsum.photos/id/106/390/390" class="card-img-top" alt="Flowers">
+                <div class="card-body">
+                    <h6 class="card-subtitle">60 Likes</h6>
+                    <p class="card-text">Photo on Instagram of something I found somewhere</p>
+                </div>
+            </div>
+        </div>
+        <!-- Eighth post-->
+        <div class="row mb-3 justify-content-center">
+            <div class="card" style="width: 40rem;">
+                <div class="row justify-content-between">
+                    <div class="col-10">
+                        <h5 class="card-title mt-2">Kind of Aurora Borealis</h5>
+                    </div>
+                    <div class="col mt-1 justify-content-end">
+                        <p class="card-text"><small class="text-muted">12/52</small></p>
+                    </div>
+                </div>
+
+                <img src="https://picsum.photos/id/120/390/390" class="card-img-top" alt="Aurora Borealis">
+                <div class="card-body">
+                    <h6 class="card-subtitle">627 Likes</h6>
+                    <p class="card-text">Photo on Instagram of something I found somewhere</p>
+                </div>
+            </div>
+        </div>
+        <!-- Eighth post-->
+        <div class="row mb-3 justify-content-center">
+            <div class="card" style="width: 40rem;">
+                <div class="row justify-content-between">
+                    <div class="col-10">
+                        <h5 class="card-title mt-2">I love evergreens!</h5>
+                    </div>
+                    <div class="col mt-1 justify-content-end">
+                        <p class="card-text"><small class="text-muted">03/90</small></p>
+                    </div>
+                </div>
+
+                <img src="https://picsum.photos/id/83/390/390" class="card-img-top" alt="Forest">
+                <div class="card-body">
+                    <h6 class="card-subtitle">42 Likes</h6>
+                    <p class="card-text">Photo on Instagram of something I found somewhere</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Links for Javascript -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

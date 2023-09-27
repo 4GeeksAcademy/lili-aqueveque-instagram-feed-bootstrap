@@ -1,0 +1,11 @@
+.text-secondary:active {
+    background-color: blue; /* Cambia el color de fondo a azul cuando se presiona */
+}
+
+.modal-icons {
+    width: 36px;
+    border: 2px solid lightgrey;
+    border-width: 1px;
+    padding: 3px;
+    border-radius: 10%;
+}
